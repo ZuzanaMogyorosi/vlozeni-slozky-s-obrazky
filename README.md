@@ -1,0 +1,1 @@
+# vlozeni-slozky-s-obrazky
