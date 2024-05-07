@@ -1,0 +1,378 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--text-black: #000000;
+	--dark-blue: #15324c;
+	--header-right-top: #ec531c;
+	--header-right-text: #ffffff;
+	--orange: #ec531c;
+	--white-text: #cecece;
+	--h1-text-white: #cecece;
+	--background-right-header: #cecece;
+	--about-us-background: #ffffff;
+	--promo-background: #908d92;
+	--shadow: rgba(0, 0, 0, 0.3);
+	--contact-background: #ffffff;
+	--contact-text-background: #929292;
+	--circle-background: #ffffff;
+	--circle-text: #000000;
+	--promo-text: white;
+	--form-red: #db0000;
+	--form-green: #008000;
+}
+
+[data-theme="light"] {
+	--text-black: #333333;
+	--dark-blue: #1a5276;
+	--header-right-top: #ea7e56;
+	--orange: #ea7e56;
+	--white-text: #292929;
+	--h1-text-white: #000000;
+	--background-right-header: #f0f0f0;
+	--about-us-background: #ffffff;
+	--promo-background: #cccccc;
+	--shadow: rgba(0, 0, 0, 0);
+	--contact-background: #ffffff;
+	--contact-text-background: #b4b4b4;
+	--circle-background: #000000;
+	--circle-text: #ffffff;
+	--promo-text: white;
+	--form-red: #db0000;
+	--form-green: #008000;
+}
+
+[data-theme="dark"] {
+	--text-black: #fffefe;
+	--dark-blue: #0a192f;
+	--header-right-top: #5d5c61;
+	--header-right-text: #ffffff;
+	--orange: #bebebe;
+	--white-text: #bebebe;
+	--h1-text-white: #000000;
+	--background-right-header: #fcfbfd;
+	--about-us-background: #5d5c61;
+	--promo-background: #11121d;
+	--shadow: rgba(0, 0, 0, 0.6);
+	--contact-background: #5d5c61;
+	--contact-text-background: #313131;
+	--circle-background: #ffffff;
+	--circle-text: #000000;
+	--promo-text: #bebebe;
+	--form-red: #db0000;
+	--form-green: #008000;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+/* ALL H1 */
+h1 {
+	text-align: center;
+	color: var(--orange);
+	padding: 0px 0px 30px 0px;
+}
+/* custom mode button */
+.custom-mode-circle {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: var(--circle-background);
+	color: var(--circle-text);
+	text-align: center;
+	line-height: 50px;
+	position: fixed;
+	bottom: 100px;
+	left: 30px;
+	font-size: 15px;
+	transition: 0.4s ease;
+}
+.custom-mode-circle:hover {
+	box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+/* Dark/light mode */
+
+.dark-light-circle {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: var(--circle-background);
+	color: var(--circle-text);
+	text-align: center;
+	line-height: 50px;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	font-size: 15px;
+	transition: 0.4s ease;
+}
+.dark-light-circle:hover {
+	box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------------------------------- HEADER */
+.header-image {
+	position: relative;
+	background-image: url(./image/zuzanamogyorosi_10super_sports_black_car_on_a_long_road_colored_b_df1fac3e-40b6-4176-baea-f0edcbde1bae.png);
+	background-color: var(--shadow);
+	background-blend-mode: darken;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 400px;
+}
+.header-container {
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	background-color: var(--dark-blue);
+	border-radius: 0 0 10px 10px;
+}
+
+.logo-white {
+	height: 40px;
+	margin: 10px;
+}
+
+.header-right {
+	width: 400px;
+	background-color: var(--header-right-top);
+	color: var(--header-right-text);
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	border-radius: 0 0 0 10px;
+}
+
+nav {
+	text-align: center;
+	padding: 10px;
+}
+nav li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: var(--white-text);
+}
+.header-info-container {
+	display: flex;
+	justify-content: space-between;
+}
+.menu-icon {
+	display: none;
+	right: 25px;
+	top: 20px;
+}
+
+.header-text {
+	width: 70%;
+	margin: 0 auto;
+	position: absolute;
+	padding: 0px;
+	bottom: 20px;
+	right: 50%;
+	transform: translateX(50%);
+	color: var(--orange);
+	text-align: right;
+}
+
+/*---------------------------------------------------------------- MAIN */
+
+/* ABOUT-US --------------------------*/
+
+.section-about-us {
+	padding: 70px 0px;
+	background-color: var(--about-us-background);
+}
+.about-us-wrapper {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	gap: 20px;
+}
+.about-us-text {
+	flex-basis: 50%;
+}
+
+.about-us-picture {
+	background-image: url(./image/about-us.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	flex-basis: 50%;
+	background-position: 80% 50%;
+}
+
+/* PROMO-SECTION ------------------------ */
+
+.section-promo {
+	background-color: var(--dark-blue);
+	padding: 70px 0px;
+}
+
+.promo-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 70%;
+	margin: 0 auto;
+}
+.promo-content {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+}
+.promo-content a {
+	text-decoration: none;
+	color: var(--promo-text);
+}
+.promo-card {
+	height: 250px;
+	width: 300px;
+	border-radius: 8px;
+	position: relative;
+	transition: 0.3s;
+}
+
+.promo-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.promo-card:hover {
+	transform: scale(1.1);
+	background-size: 110%;
+}
+
+/* CONTACT SECTION ------------------------*/
+.contact-section {
+	background-color: var(--contact-background);
+	padding: 70px 0px;
+}
+.contact-wrapper {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+}
+.maps-wrapper {
+	display: flex;
+	flex-basis: 50%;
+	max-width: 100%;
+}
+.maps-wrapper img {
+	flex: 1;
+	max-width: 100%;
+	height: auto;
+}
+.contact-logo {
+	width: 220px;
+	margin: 10px;
+}
+.contact-text {
+	background-color: var(--contact-text-background);
+	color: var(--promo-text);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 45px;
+	flex-basis: 50%;
+}
+
+/* FORM-SECTION --------------------------- */
+.form-section {
+	padding: 70px 0px;
+	background-color: var(--dark-blue);
+}
+
+.form-wrapper {
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.notifName,
+.notifPassword1,
+.notifPassword2 {
+	display: none;
+	color: var(--form-red);
+	margin-top: 10px;
+}
+.notifMatch {
+	display: block;
+	margin-top: 10px;
+}
+.valid {
+	color: var(--form-green);
+}
+.invalid {
+	color: var(--form-red);
+}
+
+.fullName,
+.password1,
+.password2 {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	outline: none;
+	color: white;
+	text-align: center;
+}
+
+form button {
+	background-color: var(--form-red);
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	margin-top: 10px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/* Tlačítko zpět nahoru*/
+.top-circle {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: var(--circle-background);
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 12px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	display: none;
+	transition: 0.4s ease;
+}
+.top-page {
+	display: none;
+	text-decoration: none;
+	color: var(--circle-text);
+	font-size: 25px;
+}
+.top-circle:hover {
+	box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
+}

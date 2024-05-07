@@ -1,0 +1,136 @@
+/* 600px a míň -------------------------------*/
+/* HEADER */
+@media (max-width: 599px) {
+	header {
+		position: relative;
+	}
+
+	.header-container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	header nav {
+		display: none;
+		position: absolute;
+		top: 70px;
+		background-color: var(--dark-blue);
+		width: 100%;
+	}
+	nav li {
+		display: block;
+		list-style-type: none;
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 20px;
+	}
+
+	.menu-icon {
+		display: block;
+		color: white;
+		font-size: 23px;
+		position: absolute;
+	}
+	header nav li {
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.header-right {
+		display: none;
+	}
+	.header-text {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0px;
+		bottom: 10px;
+	}
+}
+/* ABOUT-US */
+@media (max-width: 599px) {
+	.section-about-us {
+		padding: 50px 0px;
+	}
+	.about-us-wrapper {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.about-us-text {
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.about-us-picture {
+		max-width: 100%;
+		height: 300px;
+		flex-basis: 100%;
+	}
+
+	.section-about-us h2 {
+		margin-bottom: 10px;
+	}
+}
+/* PROMO SECTION  */
+
+@media (max-width: 599px) {
+	.promo {
+		padding: 50px 0px;
+	}
+	.promo-wrapper {
+		margin: 0 auto;
+		width: 90%;
+		gap: 15px;
+	}
+}
+/* CONTACT SECTION */
+
+@media (max-width: 599px) {
+	.contact-wrapper {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.contact-text {
+		flex-basis: 100%;
+		text-align: center;
+	}
+}
+/*  pro mapu*/
+@media (max-width: 759px) {
+	.contact-wrapper {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+/*600px a víc  pro navigaci ---------------------------------*/
+@media (min-width: 600px) {
+	header nav {
+		display: block !important;
+	}
+	.header-container {
+		width: 70%;
+		margin: 0 auto;
+		border-radius: 0 0 10px 10px;
+	}
+	nav li {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+/* 600 - 700 */
+@media (max-width: 700px) {
+	nav li {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+@media (max-width: 800px) {
+	.header-right {
+		display: none;
+	}
+}
